@@ -23,5 +23,5 @@ hostname = api.io111.com
 
 *******************************/
 
-var body = $response.body.replace(/"expireTime","clm")
+var body = $response.body.replace(/expireTime":\d+/g,'expireTime":999999999')
 $done({ body });
