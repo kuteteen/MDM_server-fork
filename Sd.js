@@ -23,7 +23,5 @@ hostname = api.io111.com
 
 *******************************/
 
-var body = $response.body.replace(/isVip":false,'isVip":true')
-.replace(/expireTime":\d+/g,'expireTime": 4096216619')
-.replace(/isSubscribe":\d+/g,'isSubscribe":true')
+var body = $response.body.replace(/expireTime":\d+/g,'expireTime":4096216619')
 $done({ body });
